@@ -9,10 +9,6 @@
   font-size: 36px;
 }
 
-.form__message {
-  margin-bottom: 20px;
-}
-
 .form__fields {
   display: flex;
   flex-direction: column;
@@ -37,6 +33,10 @@
   padding: 16px 24px;
   font-family: inherit;
   font-size: 22px;
+}
+
+.form__message {
+  margin-bottom: 20px;
 }
 
 .form__actions {

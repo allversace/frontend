@@ -1,28 +1,23 @@
-import React from 'react';
-import classes from "@/app/components/Card/Card.module.css";
+import Styles from "./Card.module.css";
 
 export const Card = (props) => {
-    return (
-        <article className={classes.card}>
-            <img
-                src={props.image}
-                alt=""
-                className={classes["card__image"]}
-            />
-            <div className={classes["card__content-block"]}>
-                <h3 className={classes["card__title"]}>{props.title}</h3>
-                <p className={classes["card__description"]}>
-                    {props.description}
-                </p>
-                <div className={classes["card__info-container"]}>
-                    <p className={classes["card__author"]}>
-                        Автор: <span className={classes["card__accent"]}>{props.developer}</span>
-                    </p>
-                    <p className={classes["card__votes"]}>
-                        Голосов на сайте: <span className={classes["card__accent"]}>{props.users.length}</span>
-                    </p>
-                </div>
-            </div>
-        </article>
-    );
+  return (
+    <article className={Styles["card"]}>
+      <img src={props.image} alt="" className={Styles["card__image"]} />
+      <div className={Styles["card__content-block"]}>
+        <h3 className={Styles["card__title"]}>{props.title}</h3>
+        <p className={Styles["card__description"]}>{props.description}</p>
+        <div className={Styles["card__info-container"]}>
+          <p className={Styles["card__author"]}>
+            Автор:{" "}
+            <span className={Styles["card__accent"]}>{props.developer}</span>
+          </p>
+          <p className={Styles["card__votes"]}>
+            Голосов на сайте:
+            <span className={Styles["card__accent"]}>{props.users.length}</span>
+          </p>
+        </div>
+      </div>
+    </article>
+  );
 };
