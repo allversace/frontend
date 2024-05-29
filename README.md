@@ -1,1 +1,2 @@
-Мой бэкенд: https://pindiebackwistonss.nomoredomainswork.ru/
+бэк - https://pindiebackallversace.nomoredomainswork.ru/
+фронт - https://pindiefrontendversace.nomoredomainswork.ru/ 
